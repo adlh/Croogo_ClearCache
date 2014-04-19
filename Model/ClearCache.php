@@ -6,7 +6,7 @@
  *
  * @category ClearCache.Model
  * @package  Croogo.ClearCache
- * @version  1.4, 1.5
+ * @version  1.4, 1.5, 2.0
  * @author   Lukas Marks <info@lumax-web.de>
  * @link     https://www.lumax-web.de
  */
@@ -46,9 +46,7 @@ class ClearCache extends ClearCacheAppModel {
                     }
                     if (!$deleted) {
                         $failed[] = $dirItem;
-                        //CakeLog::write('debug',
-                            //'Could not delete: ' . $path . $dirItem);
-                }
+                    }
             }
         }
         return $failed;
